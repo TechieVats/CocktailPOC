@@ -1,0 +1,42 @@
+{
+  "title": "Root Schema",
+  "type": "object",
+  "required": [
+    "drinks"
+  ],
+  "properties": {
+    "drinks": {
+      "title": "The drinks Schema",
+      "type": "array",
+      "default": [],
+      "items": {
+        "title": "A Schema",
+        "type": "object",
+        "required": [
+          "strDrink",
+          "idDrink"
+        ],
+        "properties": {
+          "strDrink": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "strDrinkThumb": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "idDrink": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
